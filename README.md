@@ -3,10 +3,9 @@
 
 A set of simple utilities for declarative async resource fetching.
 
-![npm](https://flat.badgen.net/npm/v/@leancloud/use-resource)
-![bundle size](https://flat.badgen.net/bundlephobia/minzip/@leancloud/use-resource)
-![ci status](https://img.shields.io/github/workflow/status/leancloud/use-resource/CI?style=flat-square)
-![code cov](https://flat.badgen.net/codecov/c/github/leancloud/use-resource)
+![npm](https://flat.badgen.net/npm/v/@leeyeh/use-resource)
+![bundle size](https://flat.badgen.net/bundlephobia/minzip/@leeyeh/use-resource)
+![code cov](https://flat.badgen.net/codecov/c/github/leeyeh/use-resource)
 
 ## Features
 
@@ -19,14 +18,14 @@ A set of simple utilities for declarative async resource fetching.
 ## Install
 
 ```bash
-npm install @leancloud/use-resource
+npm install @leeyeh/use-resource
 ```
 
 ## Example
 
 First, create a hook for `fetch`:
 ```tsx
-import { createResourceHook } from '@leancloud/use-resource';
+import { createResourceHook } from '@leeyeh/use-resource';
 
 async function fetchJSON<T>(...args: Parameters<typeof fetch>) {
   return (await (await fetch(...args)).json()) as T;

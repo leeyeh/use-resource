@@ -32,7 +32,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@leancloud/use-resource",
+  "name": "@leeyeh/use-resource",
   "module": "dist/use-resource.esm.js",
   "size-limit": [
     {
@@ -46,7 +46,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/leancloud/use-resource.git"
+    "url": "https://github.com/leeyeh/use-resource.git"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.9.0",
