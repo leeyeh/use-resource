@@ -7,6 +7,7 @@ import React, {
   useCallback,
   useMemo,
   useRef,
+  ReactNode,
 } from 'react';
 
 type Noop = (...args: any[]) => void;
@@ -166,7 +167,7 @@ export function createResourceStore<T, Props, Args extends unknown[]>(
     useTriggerEffect?.(...args);
     return useContext(Context);
   };
-  const Provider: React.FunctionComponent<Props> = ({
+  const Provider: React.FunctionComponent<Props & { children?: ReactNode }> = ({
     children,
     ...restProps
   }) => {
